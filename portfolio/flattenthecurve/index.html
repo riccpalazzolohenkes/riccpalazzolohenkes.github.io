@@ -47,7 +47,7 @@
 
 @font-face {
   font-weight: 900;
-  font-style:  normal;
+  font-style:bold;
   font-family: 'Circular-Loom';
 
   src: url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Black-bf067ecb8aa777ceb6df7d72226febca.woff2') format('woff2');
@@ -62,14 +62,30 @@ p {
 
   src: url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Black-bf067ecb8aa777ceb6df7d72226febca.woff2') format('woff2');
 }
+
+p.thick {
+  font-weight: 300;
+  font-size:small;
+  font-style:normal;
+  line-height:0.5cm;
+  font-family:sans-serif;
+
+  src: url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Black-bf067ecb8aa777ceb6df7d72226febca.woff2') format('woff2');
+}
+
+p.thick {
+  font-weight: bold;
+}
+
 </style></head><body class="" data-new-gr-c-s-check-loaded="14.1041.0" data-gr-ext-installed=""><!-- Header -->
 <div id="header">
   <div class="top"><!-- Logo -->
 <div id="logo">
   <a href="https://riccpalazzolohenkes.github.io/" id="home-link" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
     <span class="image avatar48"><img src="./index_files/avatar.jpg" alt="Avatar of Your Incredible Name"></span>
-    <h1 id="title">Riccardo Palazzolo Henkes</h1>
-    <p>Urban researcher | Consultant</p>
+    <h1 id="title">Riccardo</h1>
+		<h1 id="title">Palazzolo Henkes</h1>
+    <p>Urban researcher Consultant</p>
   </a>
 </div><!-- Nav -->
 <nav id="nav">
@@ -98,20 +114,28 @@ p {
 <p>In the project “Flattening the curve” our aim is to analyze the energy consumption and energy production data to propose active and passive strategies that can bring a new and more sustainable energy model.</p>
 
 <div class=item>
-  <img class="image fit"><img src="images/images01.png" alt="" />
+  <img class="image fit"><img src="images/image01.png" alt="" />
 </div>
 
 <p>We saw huge technological advances in green energy production from biomass technologies to photovoltaics, in spatial terms, bigger energy output per m² with much lower costs. This could be a game-changer on energy production and distribution. The current system consists of big production nodes owned by electrical companies transferring energy to consumers by the grid but is transitioning from many production nodes (photovoltaic) to consumers. It is a more decentralized system. Some of its benefits are greener energies and savings in transportation costs. But that comes with some challenges as well.</p>
 
-<p>When we say flattening the curve what do we mean?</p>
+<p class="thick">When we say flattening the curve what do we mean?</p>
 
 <p>One of the most challenging problems with the rise of photovoltaics is the duck curve problem. This has accentuated a spike in production (or less consumption during the day) and a high in demand for traditional grid electricity during the night, these variances of energy create a “bottleneck on which electrical grids can cope but with high costs. Stop Starting at the beginning of the day and ramping at dawn. Microgrid technology is part of the solution to make the system more adaptable and resilient, but it’s not enough. Experts believe to get to at least 80% renewable we would need spatial diversity and short duration storage; this is only possible with a mix of strategies, that go from building scale to district-scale. Without these measures, the costs associated with the ramp-up would outrun the benefits of photovoltaic production.</p>
 
 <p>Our reference framework is MES Barcelona. This framework promotes a new energy model for Barcelona, considering both public and private sectors. It distinguishes two types of projects; active and passive. They do not require investment from the building owners and it is open to private developments.</p>
 
+<div class=item>
+  <img class="image fit"><img src="images/image02.png" alt="" />
+</div>
+
 <h3>Methodology</h3>
 
 <p>The analysis part is divided into 2 categories: consumption and production. For the consumption part, we have land use, the total buildings’ surface (m²), buildings’ energy certificates, and energy use patterns. For the production part, we analyzed the solar radiation which gives us an amount of potential production of energy. For both, a time pattern was added, daily as well as seasonal. The next step was evaluating the data and visualizing consumption and generation patterns. On this basis, we created the catalog of consumption & production per building. To do that, from the value of production we subtracted the consumption value and classified them. It helped us to identify the biggest producer and consumer in the area of Poblenou.</p>
+
+<div class=item>
+  <img class="image fit"><img src="images/image03.png" alt="" />
+</div>
 
 <p>All those steps lead to identifying which strategies would be the best for which building. For Mitigation: how we can redistribute the land use? How the renovation process will decrease the use of energy, and for production, we will look at areas where there is potential for production to place solar panels or later energy storage facilities. To some buildings, we could apply straight production strategies, while to the others we need to start from the renovation process.</p>
 
@@ -119,23 +143,40 @@ p {
 
 <p>We built 2 datasets ( one for winter and one for summer). the land use for each building on our site. To be more precise with calculations we determined more categories, so for example not only say it’s retail but to check what kind of retail is it, if it is a hotel or a shopping mall, because the energy patterns for this function are completely different. We also considered if the building is mixed-use (ex. residential and office). After gathering this information we run it through the time pattern, daily and seasonal (because of the difference between summer and winter). We also consider the energy certificates, which determine how energy efficient each building is. And finally, based on the roof’s surface of each building and its sun radiation, we estimate the production capacity, getting both energy production and energy consumption per building and at aggregated value.</p>
 
+<div class=item>
+  <img class="image fit"><img src="images/image04.png" alt="" />
+</div>
+
 <h3>Analysis</h3>
 
 <p>Consumption  
   We have got the values for the average consumption per type of land use and multiplied it by the building footprints, obtaining the consumption patterns per day. Every land use has its own pattern as you can see in the diagram on the left-bottom corner.</p>
 
+  <div class=item>
+    <img class="image fit"><img src="images/image05.gif" alt="" />
+  </div>
+
 <p>Production
   For the production curve, we did a similar process. In this case, we consider the rooftop area as the main indicator for the calculation of the potential energy that can be produced. We are just considering photovoltaic since it is the main solution promoted and installed currently in the city, aligned with the MES Barcelona tool.</p>
 
+  <div class=item>
+    <img class="image fit"><img src="images/image06.gif" alt="" />
+  </div>
+
 <p>Balance
   We managed to get the final energy balance by combining the consumption and production data, obtaining 4 different categories: high producers, mid producers, mid consumers, and high consumers.</p>
+  <div class=item>
+    <img class="image fit"><img src="images/image07.gif" alt="" />
+  </div>
 
 <p>As you can see in the scatterplot, we distribute the buildings based on their consumption and production values.</p>
 
 <h3>Strategies</h3>
 
 <p>So, once we have got all the data inside our tool it is time to make something out of it and promote a new energy model. Our previous data comparing consumption patterns and solar energy potential of each building, help us defining a potential self-sufficiency index and a pashed intervention plan for the whole district urban fabric.</p>
-
+<div class=item>
+  <img class="image fit"><img src="images/image08.png" alt="" />
+</div>
 <p>This is our starting point, we identify the current buildings that could be self-sufficient in case the solar panels will install on their roofs in blue and the ones that despite this would still have a negative energy balance in the red.</p>
 
 <p>1.Renovation
