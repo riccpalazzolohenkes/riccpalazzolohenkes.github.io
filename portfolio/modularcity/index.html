@@ -22,6 +22,32 @@
     p.i {
   font-style: italic;
     }
+    div {
+  text-align: justify;
+  text-justify: inter-word;
+}
+.responsive {
+  width: 100%;
+  max-width: 730px;
+  height: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
     </style>
     </head>
 
@@ -75,7 +101,7 @@
 }
 
 p {
-  font-weight: 100;
+  font-weight: 220;
   font-size:small;
   font-style:normal;
   line-height:0.5cm;
@@ -144,127 +170,113 @@ p.thick {
 	  <div class="container">
 			<header>
 				<h2>Modular(c)ity</h2>
-				<p>A new circular microdistrict</p>
-			</header><p>The energy supply sector is the largest contributor to global greenhouse gas emissions. Within that figure, households account for 29% of the consumption. On top of that, the average building wastes 30% of the energy because of inefficiencies. We consider that the main challenge is to increase our energy efficiency,   make energy sources renewable, and obtain a higher degree of self-sufficiency. We can divide challenges into two types. From the production side, there are solutions such as solar panels, storage, and microgrid technologies. From the consumption side, building renovation strategies, electric vehicles, and smart technologies.</p>
+				<p>A new circular micro-district</p>
+<p.thick>Introduction</p>
+<p>Modular(c)ity is a project that aims to propose a new and more sustainable version of the micro-district of the District of Lasnamäe in Tallin, Estonia. A more sustainable and circular district is going to be promoted by the implementation of modular structures that we will be deployed taking into account the needs of spaces and time of the current and future population.</p>
 
-<p>In the project “Flattening the curve” our aim is to analyze the energy consumption and energy production data to propose active and passive strategies that can bring a new and more sustainable energy model.</p>
-
-<div class=item>
-  <img class="image fit"><img src="images/image01.png" alt="" />
-  <p class="b"> Fig. 1 - Energy framework: production & consumption</p>
-</div>
-
-<p>We saw huge technological advances in green energy production from biomass technologies to photovoltaics, in spatial terms, bigger energy output per m² with much lower costs. This could be a game-changer on energy production and distribution. The current system consists of big production nodes owned by electrical companies transferring energy to consumers by the grid but is transitioning from many production nodes (photovoltaic) to consumers. It is a more decentralized system. Some of its benefits are greener energies and savings in transportation costs. But that comes with some challenges as well.</p>
-
-<p class="thick">When we say flattening the curve what do we mean?</p>
-
-<p>One of the most challenging problems with the rise of photovoltaics is the duck curve problem. This has accentuated a spike in production (or less consumption during the day) and a high in demand for traditional grid electricity during the night, these variances of energy create a “bottleneck on which electrical grids can cope but with high costs. Stop Starting at the beginning of the day and ramping at dawn. Microgrid technology is part of the solution to make the system more adaptable and resilient, but it’s not enough. Experts believe to get to at least 80% renewable we would need spatial diversity and short duration storage; this is only possible with a mix of strategies, that go from building scale to district-scale. Without these measures, the costs associated with the ramp-up would outrun the benefits of photovoltaic production.</p>
-
-<p>Our reference framework is MES Barcelona. This framework promotes a new energy model for Barcelona, considering both public and private sectors. It distinguishes two types of projects; active and passive. They do not require investment from the building owners and it is open to private developments.</p>
+<p.thick>Context</p>
+<p>The micro-district is a typical urban development of the Soviet Union period, where all the services and connections were planned in order to promote different communities close to each other. In the case of Lasnamäe, this district remained unfinished due to the collapse of the Soviet Union, leaving the area with a high deficit of services. In fact, a similar development of the period started with the development of factories and industrial infrastructures, followed by residential units for the workers and finally the complimentary services.</p>
 
 <div class=item>
-  <img class="image fit"><img src="images/image02.png" alt="" />
-  <p class="b"> Fig. 2 - Flattening the curve</p>
+  <img class="responsive"><img src="images/image01.png" width="700" />
+  <p class="b"> Fig. 1 - Open circles</p>
 </div>
 
+<p.thick>Circularity in Lasnamäe</p>
+<p>With the aim of developing a new model of micro-district that considers circularity as a key principle, we have analyzed the current system and afterward, what can be improved or modified? In the first diagram, it is possible to see two separated systems: the first one related to the built environment while the second one to the natural sphere. It is possible to see how unfinished buildings or buildings left unused generates redundant spaces, while in therm of the natural environment, large spaces unmanaged prone to a new occupation, increasing the isolation of already isolated built environment.</p>
 
-<h3>Methodology</h3>
-
-<p>The analysis part is divided into 2 categories: consumption and production. For the consumption part, we have land use, the total buildings’ surface (m²), buildings’ energy certificates, and energy use patterns. For the production part, we analyzed the solar radiation which gives us an amount of potential production of energy. For both, a time pattern was added, daily as well as seasonal. The next step was evaluating the data and visualizing consumption and generation patterns. On this basis, we created the catalog of consumption & production per building. To do that, from the value of production we subtracted the consumption value and classified them. It helped us to identify the biggest producer and consumer in the area of Poblenou.</p>
+<p>In the second diagram, the two environments are connected thanks to the role that the people and the communities can play in the development of a more circular micro-district. The main element to connect both environments are modular structures: these flexible structures are classified into 2 different categories: the demand-based ones respond to the needs of the citizens, while the regenerative ones provide ecosystem services that enhance the sustainability of the communities. In fact, the unfinished buildings can be repurposed, by using demand-based modules, while the natural environment can provide new resources and new ecosystem services thanks to regenerative modules.</p>
 
 <div class=item>
-  <img class="image fit"><img src="images/image03.png" alt="" />
-  <p class="b"> Fig. 3 - Methodology</p>
+  <img class="responsive"><img src="images/image02.png" width="700" />
+  <p class="b"> Fig. 2 - Closed circles</p>
 </div>
 
-<p>All those steps lead to identifying which strategies would be the best for which building. For Mitigation: how we can redistribute the land use? How the renovation process will decrease the use of energy, and for production, we will look at areas where there is potential for production to place solar panels or later energy storage facilities. To some buildings, we could apply straight production strategies, while to the others we need to start from the renovation process.</p>
-
-<p class="thick">Data, Tools & Methods</p>
-
-<p>We built 2 datasets ( one for winter and one for summer). the land use for each building on our site. To be more precise with calculations we determined more categories, so for example not only say it’s retail but to check what kind of retail is it, if it is a hotel or a shopping mall, because the energy patterns for this function are completely different. We also considered if the building is mixed-use (ex. residential and office). After gathering this information we run it through the time pattern, daily and seasonal (because of the difference between summer and winter). We also consider the energy certificates, which determine how energy efficient each building is. And finally, based on the roof’s surface of each building and its sun radiation, we estimate the production capacity, getting both energy production and energy consumption per building and at aggregated value.</p>
+<p.thick>Methodology</p>
+<p>- User to object: by using time-use data, we identified 6 different archetypes (white-collar workers, blue-collar workers, pensioners, students, unemployed, houseworker). Each of these archetypes had assigned specific modules according to their needs.</p>
+<p>- Object to space: Considering the territorial analysis, the land uses and the characteristics of a micro-district, it is possible to connect the possibilities of the modular structures with the territorial needs of a micro-district.</p>
+<p>- Space to flow: finally, once the specific modules respond to the needs of the community and the territorial characteristics, it comes time to understand how these modules can change based on user changes, seasonal flows, and specific municipal strategies</p>
 
 <div class=item>
-  <img class="image fit"><img src="images/image04.png" alt="" />
-  <p class="b"> Fig. 4 - Data structure</p>
+  <img class="responsive"><img src="images/image03.jpg" width="700" />
+  <p class="b"> Fig. 3 - methodology</p>
 </div>
 
-<h3>Analysis</h3>
+<p.thick>User to object</p>
+<p>In order to define the number of modules required for Lasnamäe, we started by analyzing the population of Tallinn. Because each professional category doesn’t use the modules at the same time we clustered the population with this criteria.</p>
 
-<p class="thick">Consumption</p>
-<p>We have got the values for the average consumption per type of land use and multiplied it by the building footprints, obtaining the consumption patterns per day. Every land use has its own pattern as you can see in the diagram on the left-bottom corner.</p>
-
-  <div class=item>
-    <img class="image fit"><img src="images/image05.gif" alt="" />
-    <p class="b"> Fig. 5 - Energy consumption 24h</p>
-  </div>
-
-  <p class="thick">Production</p>
-<p>For the production curve, we did a similar process. In this case, we consider the rooftop area as the main indicator for the calculation of the potential energy that can be produced. We are just considering photovoltaic since it is the main solution promoted and installed currently in the city, aligned with the MES Barcelona tool.</p>
-
-  <div class=item>
-    <img class="image fit"><img src="images/image06.gif" alt="" />
-    <p class="b"> Fig. 6 - Energy production 24h</p>
-  </div>
-
-  <p class="thick">Balance</p>
-<p>We managed to get the final energy balance by combining the consumption and production data, obtaining 4 different categories: high producers, mid producers, mid consumers, and high consumers.</p>
-  <div class=item>
-    <img class="image fit"><img src="images/image07.gif" alt="" />
-    <p class="b"> Fig. 7 - Energy balance</p>
-  </div>
-
-<p>As you can see in the scatterplot, we distribute the buildings based on their consumption and production values.</p>
-
-<h3>Strategies</h3>
-
-<p>So, once we have got all the data inside our tool it is time to make something out of it and promote a new energy model. Our previous data comparing consumption patterns and solar energy potential of each building, help us defining a potential self-sufficiency index and a pashed intervention plan for the whole district urban fabric.</p>
 <div class=item>
-  <img class="image fit"><img src="images/image08.png" alt="" />
-  <p class="b"> Fig. 8 - Strategies</p>
-</div>
-<p>This is our starting point, we identify the current buildings that could be self-sufficient in case the solar panels will install on their roofs in blue and the ones that despite this would still have a negative energy balance in the red.</p>
-<div class=item>
-  <img class="image fit"><img src="images/image09.gif" alt="" />
-  <p class="b"> Fig. 9 - Baseline</p>
+  <div class="row">
+    <div class="column">
+      <img src="images/image04.png" alt="Snow" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="images/image05.png" alt="Forest" style="width:100%">
+    </div>
+  <p class="b"> Fig. 4 - Time uses & archetypes definition</p>
 </div>
 
-<p class="thick">1. Renovation Strategy</p>
-<p>The first strategy is focused on the red buildings shown before, and reducing their current energy consumption. The selection of the buildings to intervene first on will be done following 2 criteria:
-  -Their energy certification, with letter Gs as the worst efficient buildings and A as the better ones.
-  -Their potential way towards becoming self-sufficient and share energy in the future.</p>
+
+<p>Finally, the goal of this step is to determine the type and number of modules required for Lasnamäe district. We defined our modules based on 6 activities of the population: Civic, Shopping, Household, Work Outdoor, Religion, Education, Socialization. We also added 3 more modules to provide essential needs and create an autonomous district: Food production, Waste management, Energy production.</p>
+
+<div class=item>
+  <img class="responsive"><img src="images/image06.png" width="700" />
+  <p class="b"> Fig. 6 - Modules categories</p>
+</div>
+
+<p>We can then evaluate the number of required modules for our population. The advantage of this approach is that the number of modules adapts to the population. Like in this example, if the population of the district goes from 1000 to 10000 people, the number of required modules could be predicted. In the same way, if the archetype’s distribution changes, the same analysis could be done.</p>
+
+<div class=item>
+  <img class="responsive"><img src="images/image07.png" width="700" />
+  <p class="b"> Fig. 7 - Modules quantization</p>
+</div>
+
+<p.thick>Object to space</p>
+<p>In this second step, we analyzed the characteristics of the micro-district number 10 and we proposed some solutions that can allow the development of different phases. This basis road network, together with the green network and the need for active fronts defines the backbone of the development of the modular structures.</p>
+
+<div class=item>
+  <img class="responsive"><img src="images/image08.png" width="700" />
+  <p class="b"> Fig. 8 - Network definition</p>
+</div>
+
+<p>The development is expected to start from a pilot test and then keeps growing in different phases, sensible to the growth of the population and its needs.</p>
+
+<div class=item>
+  <img class="responsive"><img src="images/image09.jpg" width="700" />
+  <p class="b"> Fig. 9 - Phases of implementation</p>
+</div>
+
+<p>Based on the calculation, 500m with a vertical farming structure is the suitable minimal composition for a self-sufficient community. The 1st two phases starting with existing neighborhoods would form the initial self-sustaining communities. When there are changes in demand or supply based on population change, these two communities will support each other.</p>
+
+<div class=item>
+  <img class="responsive"><img src="images/image10.jpg" width="700" />
+  <p class="b"> Fig. 10 - Regenerative development</p>
+</div>
+
+<p>Zoom into a single self-sustaining unit, it consists of two types of modules, the demand-based modules, and the regenerative modules.  The allocation of demand-based modules would approach the key commerce & active front and employ the inactive population. the regenerative modules, which are2 mostly outdoor gardens, would be allocated near or through the buildings to create connected green networks.</p>
+
+<p>By each half and full year, the change in archetypes would affect the demand-based modules’ distribution. When there’s a growth in population, demand-based modules will grow according to archetype demands. When there’s a decrease in population, the redundant demand-based modules will be re-purposed to support self-sustainability needs.</p>
+
+<div class=item>
+  <img class="responsive"><img src="images/image11.gif" width="700" />
+  <p class="b"> Fig. 11 - Growth model</p>
+</div>
+
+<p>After the decrease in demand, the retired modules will be replaced by shared regenerative modules, which also serve as sociable spaces. By physically connecting different communities and functionally serves as resource exchange hubs, the regenerative modules could be potentially been developed into hybrid modules which not only sustain basic needs but also serves higher needs such as social space and workspace.</p>
+
+<div class=item>
+  <img class="responsive"><img src="images/image12.png" width="700" />
+  <p class="b"> Fig. 11 - Growth model - Sections</p>
+</div>
+
+<p.thick>Space to flow</p>
+<p>Finally, the module distribution changes according to the population’s changes and their needs. Not only the quantity of modules but also the typology of the modules varies, allowing flexible use of them.</p>
   
-<p>Our first criteria identify the potential of each building to reduce its current energy consumption, from an 80% reduction in the case of Gs certificates and 20 % in the case of Ds. Our second criteria, takes into account the temporal dimension, identifying 3 phases of intervention, based on the current energy balance of the buildings. We start from the ones that are farthest away from achieving self-sufficiency and end up with those closest to it.</p>
 <div class=item>
-  <img class="image fit"><img src="images/image10.gif" alt="" />
-  <p class="b"> Fig. 10 - Renovation strategy</p>
+  <img class="responsive"><img src="images/image14.gif" width="700" />
 </div>
 
-<p class="thick">2. Solar Energy Production</p>
-<p>Therefore we need to combine it with solar energy production on the roof’s strategy as well. This would help to reduce, even more, the energy consumed during the sunny hours and even generate an excess that could be stored and exchanged later.  Our strategy focuses now on the buildings with a positive overall energy balance or the blue dots on the right side of our scatterplot. This is the current situation with more than 1300 buildings with an opportunity to generate an energy excess.</p>
-
-<p>The way to choose the ones whose installation of solar panels could be financed by Barcelona Mes is by distributing the potential producers into three groups according to their capacity to collect energy to share, later on, dividing them from high to low producers. We can see here, how following the previous three phases explained in the previous renovation strategy, new potential higher producers that could be serviced by Barcelona Mes appear in the district.</p>
-<div class=item>
-  <img class="image fit"><img src="images/image11.jpg" alt="" />
-  <p class="b"> Fig. 11 - Solar energy production strategy</p>
-</div>
-
-<p class="thick">3. Energy Exchange Strategy</p>
-<p>Our final step once we have completed both the renovation and production process is to allow the exchange of energy between the buildings around 22@district that still present a negative energy balance. Firstly, we analyze the closest producers with an energy excess to these buildings, based on the existing electrical distribution network.</p>
-
-<p>Once we cluster the possible neighbors to take energy from, the exchange takes place according to the excess and demand of energy of each of the different members of the new distributed and public network.</p>
-<div class=item>
-  <img class="image fit"><img src="images/image12.gif" alt="" />
-  <p class="b"> Fig. 12 - Energy exchange</p>
-</div>
-<h3>Conclusion</h3>
-
-<p>The final result is that after our renovation process, we can have more than 400 hundred new buildings that could have a big energy excess to be shared and included in the Barcelona MES tool.</p>
-
-<p>To conclude, we have talked all the dime about buildings and curves, but we do not have to forget that to achieve a new energy model, we need to build communities, physical and virtual ones, where everybody gets involved.</p>
-
-<p>Check the video of this project <a href="https://www.youtube.com/watch?v=gLw6J3R7zGc" target="_blank">here</a></p>
-
-<p> <span class="thick"> Flatten the Curve</span> is a project of IAAC, Institute for Advanced Architecture of Catalonia developed at Master in City & Technology in 2020/21 by students: Riccardo Palazzolo, Marta Maria Galdys, Nadh Ha Naseer, Juan Pablo Pintado, Alvaro Cerezo, and faculty: Angelos Chronis, Iacopo Neri, Mahsa Nikoufar and Androniki Pappa</p>
+<p class="thick">Modular(c)ity</span> is a project of IAAC, Institute for Advanced Architecture of Catalonia developed at Master in City & Technology in 2020/21 by students: Riccardo Palazzolo, Sridhar Subramani, Tugdual Sarazin, Dongxuan Zhu and faculty: Laura Narvaez Zertuche, Bruno Moser and Andy Bow</p>
 
 </div>
 	</article>
