@@ -1791,6 +1791,9 @@ input, select, textarea {
 				width: auto;
 			}
 
+		.img_row_2 { height: 100%; width: 100%; overflow: hidden; box-sizing: border-box; padding: 5px; }
+
+
 /* List */
 
 	ul {
