@@ -29,24 +29,7 @@
 .responsive {
   width: 100%;
   max-width: 730px;
-  height:0cm;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.column {
-  float: left;
-  width: 50%;
-  padding: 10px;
-}
-
-/* Clearfix (clear floats) */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
+  height: auto;
 }
     </style>
     </head>
@@ -124,10 +107,16 @@ p.thick {
   font-weight: bold;
 }
 
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+ul.list {
+  list-style-type:square;
+  font-weight: 220;
+  font-size:small;
+  font-style:normal;
+  line-height:0.5cm;
+  font-family:sans-serif;
+  padding-bottom:0pt  ;
+
+  src: url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Black-bf067ecb8aa777ceb6df7d72226febca.woff2') format('woff2');
 }
 
 </style></head><body class="" data-new-gr-c-s-check-loaded="14.1041.0" data-gr-ext-installed=""><!-- Header -->
@@ -175,114 +164,115 @@ img {
 	<article class="shade-two">
 	  <div class="container">
 			<header>
-				<h2>Modular(c)ity</h2>
-				<h4>A new circular micro-district</h4>
-<p.thick>Introduction</p>
-<p>Modular(c)ity is a project that aims to propose a new and more sustainable version of the micro-district of the District of Lasnamäe in Tallin, Estonia. A more sustainable and circular district is going to be promoted by the implementation of modular structures that we will be deployed taking into account the needs of spaces and time of the current and future population.</p>
-
-<p.thick>Context</p>
-<p>The micro-district is a typical urban development of the Soviet Union period, where all the services and connections were planned in order to promote different communities close to each other. In the case of Lasnamäe, this district remained unfinished due to the collapse of the Soviet Union, leaving the area with a high deficit of services. In fact, a similar development of the period started with the development of factories and industrial infrastructures, followed by residential units for the workers and finally the complimentary services.</p>
-
-<div class=item>
-  <img class="responsive"><img src="images/image01.png" width="700" />
-  <p class="b"> Fig. 1 - Open circles</p>
-</div>
-
-<p.thick>Circularity in Lasnamäe</p>
-<p>With the aim of developing a new model of micro-district that considers circularity as a key principle, we have analyzed the current system and afterward, what can be improved or modified? In the first diagram, it is possible to see two separated systems: the first one related to the built environment while the second one to the natural sphere. It is possible to see how unfinished buildings or buildings left unused generates redundant spaces, while in therm of the natural environment, large spaces unmanaged prone to a new occupation, increasing the isolation of already isolated built environment.</p>
-
-<p>In the second diagram, the two environments are connected thanks to the role that the people and the communities can play in the development of a more circular micro-district. The main element to connect both environments are modular structures: these flexible structures are classified into 2 different categories: the demand-based ones respond to the needs of the citizens, while the regenerative ones provide ecosystem services that enhance the sustainability of the communities. In fact, the unfinished buildings can be repurposed, by using demand-based modules, while the natural environment can provide new resources and new ecosystem services thanks to regenerative modules.</p>
+				<h2>New Hong Kong</h2>
+				<h4>Running simulations for a new city</h4>
+        <br>
+        <h3>Context</h3>
+<p>The following exercise has the scope of utilising the evolutionary multi-objective optimization engine for Grasshopper 3D Wallacei in a specific urban tissue and generating different simulations aiming to find the fittest solution to a problem that is constrained by a set of predefined limitations. The urban tissue to “optimize” in this exercise is the one of the city of Hong Kong, specifically the one of the Kowloon Peninsula.</p>
+<br>
+<h3>Challenges</h3>
+<p>Extended and comprehensive research based on academic papers, news, and official reports has been developed in order to identify what are the problems of Hong Kong. Considering the need of operationalizing them through Grasshopper codes, the final 3 challenges selected are the following:</p>
+<br>
 
 <div class=item>
-  <img class="responsive"><img src="images/image02.png" width="700" />
-  <p class="b"> Fig. 2 - Closed circles</p>
-</div>
+  <img class="container" src="images/image01.jpg" alt="" title="Literature Review">
+  <p class="b"> Fig. 1 - Hong Kong challenges</p>
+  </div>
 
-<p.thick>Methodology</p>
-<p>- User to object: by using time-use data, we identified 6 different archetypes (white-collar workers, blue-collar workers, pensioners, students, unemployed, houseworker). Each of these archetypes had assigned specific modules according to their needs.</p>
-<p>- Object to space: Considering the territorial analysis, the land uses and the characteristics of a micro-district, it is possible to connect the possibilities of the modular structures with the territorial needs of a micro-district.</p>
-<p>- Space to flow: finally, once the specific modules respond to the needs of the community and the territorial characteristics, it comes time to understand how these modules can change based on user changes, seasonal flows, and specific municipal strategies</p>
-
-<div class=item>
-  <img class="responsive"><img src="images/image03.jpg" width="700" />
-  <p class="b"> Fig. 3 - Methodology</p>
-</div>
-
-<p.thick>User to object</p>
-<p>In order to define the number of modules required for Lasnamäe, we started by analyzing the population of Tallinn. Because each professional category doesn’t use the modules at the same time we clustered the population with this criteria.</p>
-
-<div class=item>
-  <div class="row">
-    <div class="column">
-      <img src="images/image04.png" alt="Snow" style="width:100%">
-    </div>
-    <div class="column">
-      <img src="images/image05.png" alt="Forest" style="width:100%">
-    </div>
-  <p class="b"> Fig. 4 & 5 - Time uses & archetypes definition</p>
-</div>
-
-
-<p>Finally, the goal of this step is to determine the type and number of modules required for Lasnamäe district. We defined our modules based on 6 activities of the population: Civic, Shopping, Household, Work Outdoor, Religion, Education, Socialization. We also added 3 more modules to provide essential needs and create an autonomous district: Food production, Waste management, Energy production.</p>
-
-<div class=item>
-  <img class="responsive"><img src="images/image06.png" width="700" />
-  <p class="b"> Fig. 6 - Time uses per categories</p>
-</div>
-
-<p>We can then evaluate the number of required modules for our population. The advantage of this approach is that the number of modules adapts to the population. Like in this example, if the population of the district goes from 1000 to 10000 people, the number of required modules could be predicted. In the same way, if the archetype’s distribution changes, the same analysis could be done.</p>
-
-<div class=item>
-  <img class="responsive"><img src="images/image07.png" width="500" style="width:50%" />
-  <p class="b"> Fig. 7 - Modules categories</p>
-</div>
-
-<p.thick>Object to space</p>
-<p>In this second step, we analyzed the characteristics of the micro-district number 10 and we proposed some solutions that can allow the development of different phases. This basis road network, together with the green network and the need for active fronts defines the backbone of the development of the modular structures.</p>
-
-<div class=item>
-  <img class="responsive"><img src="images/image08.png" width="700" />
-  <p class="b"> Fig. 8 - Modules quantization</p>
-</div>
-
-<p>The development is expected to start from a pilot test and then keeps growing in different phases, sensible to the growth of the population and its needs.</p>
-
-<div class=item>
-  <img class="responsive"><img src="images/image09.jpg" width="700" />
-  <p class="b"> Fig. 9 - Network definition</p>
-</div>
-
-<p>Based on the calculation, 500m with a vertical farming structure is the suitable minimal composition for a self-sufficient community. The 1st two phases starting with existing neighborhoods would form the initial self-sustaining communities. When there are changes in demand or supply based on population change, these two communities will support each other.</p>
-
-<div class=item>
-  <img class="responsive"><img src="images/image10.jpg" width="700" />
-  <p class="b"> Fig. 10 - Phases of implementation</p>
-</div>
-
-<p>Zoom into a single self-sustaining unit, it consists of two types of modules, the demand-based modules, and the regenerative modules.  The allocation of demand-based modules would approach the key commerce & active front and employ the inactive population. the regenerative modules, which are2 mostly outdoor gardens, would be allocated near or through the buildings to create connected green networks.</p>
-
-<p>By each half and full year, the change in archetypes would affect the demand-based modules’ distribution. When there’s a growth in population, demand-based modules will grow according to archetype demands. When there’s a decrease in population, the redundant demand-based modules will be re-purposed to support self-sustainability needs.</p>
-
-<div class=item>
-  <img class="responsive"><img src="images/image11.gif" width="700" />
-  <p class="b"> Fig. 11 - Regenerative development</p>
-</div>
-
-<p>After the decrease in demand, the retired modules will be replaced by shared regenerative modules, which also serve as sociable spaces. By physically connecting different communities and functionally serves as resource exchange hubs, the regenerative modules could be potentially been developed into hybrid modules which not only sustain basic needs but also serves higher needs such as social space and workspace.</p>
-
-<div class=item>
-  <img class="responsive"><img src="images/image12.png" width="700" />
-  <p class="b"> Fig. 12 - Growth model</p>
-</div>
-
-<p.thick>Space to flow</p>
-<p>Finally, the module distribution changes according to the population’s changes and their needs. Not only the quantity of modules but also the typology of the modules varies, allowing flexible use of them.</p>
+<ul class="list">
+<span style="font-weight:bold;">Heat Island effect</span>
+<li>Definition: Metropolitan area which is significantly warmer than its surrounding rural areas</li>
+<li>Current situation: At the peak of summer in Hong Kong, every degree Celsius rise in temperature results in several more deaths associated with excessive heat exposure. UHI also exacerbates heat waves, increases the risks of heatstroke and exhaustion, especially among those with chronic diseases and working outdoors</li>
+<br>
+<span style="font-weight:bold;">Light pollution</span>
+<li>Definition: Brightening of the night sky caused by street lights and other man-made sources, which has a disruptive effect on natural cycles and inhibits the observation of stars and planets</li>
+<li>Current situation: Hong Kong has been named the world’s worst city for light pollution. Some areas, like the Tsim Sha Tsui are 1,200 brighter than a normal dark sky. Overall brightness is at least 30 times higher than in the countryside</li>
+<br>
+<span style="font-weight:bold;">Mental health crisis</span>
+<li>Definition: Residents struggling with stress, depression, anxiety, or mental disabilities</li>
+<li>Current situation: Official statistics show that 1 in 5 Hong Kong employees are on the job an average of 55 hours per week and 1 in 6 residents had a common mental disorder, such as anxiety, depression, and psychotic disorder.</li>
+</ul>
   
-<div class=item>
-  <img class="responsive"><img src="images/image14.gif" width="700" />
-</div>
+<h3>Preparation of the phenotype</h3>
+<p>The final design approach to design the phenotype has been based on the characteristics elements of the urban morphology of Hong Kong. In fact, after trying to use an existing grid of Hong Kong and to generate our own grid, the final decision has been to populate a specific area with buildings and generate our own version of Hong Kong by using the main characteristics of its essence:</p>
 
-<p><span style="font-weight:sbold;"></span> is a project of <span style="font-weight:bold;">IAAC, Institute for Advanced Architecture of Catalonia</span> developed at <span style="font-weight:bold;">Master in City & Technology</span> in 2020/21 by students: <span style="font-weight:bold;">Riccardo Palazzolo, Sridhar Subramani, Tugdual Sarazin, Dongxuan Zhu</span> and faculty: <span style="font-weight:bold;">Laura Narvaez Zertuche, Bruno Moser and Andy Bow</span></p>
+<ul class="list">
+  <li>High building density</li>
+  <li>Narrow streets</li>
+  <li>Lack of green spaces</li>
+  <li>High buildings (average over 40 floors)</li>
+  <li>High variability of heights</li>
+  <li>Non-orthogonal grid</li>
+  </ul>
+
+  <h3>Definition of the fitness criteria (objectives)</h3>
+  <p>Once defined the challenges and the phenotype, we proceeded to define the fitness criteria for the development of the project. In total, 5 fitness criteria were selected:</p>
+  
+  <div class=item>
+    <img class="container" src="images/image02.jpg" alt="" title="Literature Review">
+    <p class="b"> Fig. 2 - Fitness criteria</p>
+    </div>
+
+  <ul class="list">
+    <li><span style="font-weight:bold;">Maximise green façades</span>in areas where there is a higher solar exposure. This will help to reduce the heat island effect by reducing the number of reflective surfaces and at the same time will have a positive impact on the employees’ mental health, since it will increase the contact with natural elements and sunlight</li>
+    <li><span style="font-weight:bold;">Maximise parasitic structures</span>aiming to generate new green spaces vertically considering the high building density and the lack of green areas. Similar to the green façades, the impact is linked both to the heat island effect and the mental health crisis</li>
+    <li><span style="font-weight:bold;">Maximise bridge visibility</span>: mainly related to tas a way to generate new green spaces accessible from the office buildings. The logic behind is similar to generating large spaces and with higher visibility. Hong Kong has a tradition to generate skyways, like the Central Elevated Walkway, and our proposal tries to re-interpret such structures</li>
+    <li><span style="font-weight:bold;">Maximise total frontal area</span>: specifically the proportion of areas for each specifunderstood as a measure to increase wind penetration and consequently reduce the heat island effect. The frontal area index considers the projection of building façades on a panel considering the direction of the wind…</li>
+    <li><span style="font-weight:bold;">Minimise light pollution</span> generated by the buildings. At the same time that buildings receive sun exposure, they also generate light pollution at night. A higher building density increases the light pollution generated</li>
+  </ul>
+
+  <h3>Methodology</h3>
+  <p>The setup for the urban fabric started with creating buildings that were scalable in XY directions and rotate around the center and the generation of the heights that represented the characteristics of Hong Kong’s skyline. Next, the connections between all the buildings were created by generating all the potential connections and in order to select the bridges that have the highest visibility in the urban fabric an isovist visibility analysis was done and the 10% with the highest visibility was used to optimise the selection of bridges with the highest visibility. Secondly, a solar analysis was done on the buildings to maximise solar exposure and introduce parasitic structures. These structures were added in the areas where the solar exposure was at its highest level. As a third step, the frontal area index was calculated using occlusion and calculating the inverted area of the projected one on a specific panne. Finally, the light pollution was calculated by taking into consideration the heights of the buildings estimating that the taller the buildings the higher the light pollution and with this, we tried to optimise by minimising the light pollution.</p>
+  <br>
+
+  <div class=item>
+    <img class="container" src="images/image03.jpg" alt="" title="Literature Review">
+    <p class="b"> Fig. 3 - Methodology</p>
+    </div>
+
+  <h3>Results of the evolutionary simulation</h3>
+  <p>The setup for the urban fabric started with creating buildings that were scalable in XY directions and rotate around the center and the generation of the heights that represented the characteristics of Hong Kong’s skyline. Next, the connections between all the buildings were created by generating all the potential connections and in order to select the bridges that have the highest visibility in the urban fabric an isovist visibility analysis was done and the 10% with the highest visibility was used to optimise the selection of bridges with the highest visibility. Secondly, a solar analysis was done on the buildings to maximise solar exposure and introduce parasitic structures. These structures were added in the areas where the solar exposure was at its highest level. As a third step, the frontal area index was calculated using occlusion and calculating the inverted area of the projected one on a specific panne. Finally, the light pollution was calculated by taking into consideration the heights of the buildings estimating that the taller the buildings the higher the light pollution and with this, we tried to optimise by minimising the light pollution.</p>
+  <br>
+  <h4>Analysing the 5 fitness criteria together</h4>
+  <p>The process to generate simulations aimed to understand the existing links between genes and fitness criteria. Therefore, the first simulation considered the 5 fitness criteria (generation size: 20 and generation count: 20) and these are the main elements of the analysis:</p>
+
+  <div class=item>
+    <img class="container" src="images/image04.gif" alt="" title="Literature Review">
+    <p class="b"> Fig. 4 - Fitness criteria analysis</p>
+    </div>
+
+  <ul class="list">
+    <li><span style="font-weight:bold;">No relevance of the wind penetration</span>: the evolution of the Standard deviation curve is becoming flattered and the fitness value is identified in the first iteration. At the same time, the SD value trendline and the mean value trendline grow in an unstable pattern.</li>
+    <li><span style="font-weight:bold;">Light pollution works in an opposite effect</span>: as per the parallel coordinate plot, there is evidence on how the minimization of light pollution works in reverse compared to the rest of the indicators. Considering the way the light pollution is measured, indeed it works in an opposite way: the smaller the building, the smaller the light pollution generated. On the other hand, the rest of the fitness objectives (except the wind penetration) are positively correlated with the size of the building: the higher the building, the higher solar exposure.</li>
+    </ul>
+
+    <div class=item>
+      <img class="container" src="images/image05.jpg" alt="" title="Literature Review">
+      <p class="b"> Fig. 5 - Exported solutions 3D</p>
+      </div>
+
+    <div class=item>
+      <img class="container" src="images/image06.gif" alt="" title="Literature Review">
+      <p class="b"> Fig. 6 - Exported solutions</p>       
+    </div>
+  <h4>Analyzing the selected 3 fitness criteria</h4>
+  <p>The previous analysis of the results showed how 2 of the fitness criteria selected are not supporting in the optimization process:</p>
+
+  <ul class="list">
+    <li>Maximise wind penetration: due to the building density, there is no much variability.</li>
+    <li>Minimise light pollution: the optimisation of these fitness criteria is contradictory in comparison of the other valid fitness criteria.</li>
+    </ul>
+
+    <p>Wallacei was run a second time excluding the non-valid fitness criteria (generation size: 20 and generation count: 20).</p>
+    <br>
+
+    <h3>Conclusion</h3>
+    <p>To conclude, the selected 3 fitness criteria are optimised to their individual parameters. Yet, the morphologies produced do not lead directly to results that could be correlated with the urban environment. Even though the final phenotypes present differences, the characteristics that distinguish one from the others are quite eminent. The results are morphologically similar to the urban fabric of the Hong Kong case study, an observation that could lead to the conclusion that given the current structure of the city, the proposed scenarios could be integrated rather easily. Yet, a further investigation of the grid of the city could lead to more accurate conclusions. Hence, the model could have more potential if it was tested with more variations on the given phenotypes.</p>
+    <br>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/euuQftIoLdY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    <br>
+
+    <p><span style="font-weight:bold;">New Hong Kong</span> is a project of <span style="font-weight:bold;">IAAC, Institute for Advanced Architecture of Catalonia</span> developed at <span style="font-weight:bold;">Master in City & Technology</span> in 2020/21 by students: <span style="font-weight:bold;">Riccardo Palazzolo, Aishath Nadh Ha Naseer and Diana Roussi</span>, and faculty: <span style="font-weight:bold;">Milad Showkatbakhsh</span></p>
 
 </div>
 	</article>
