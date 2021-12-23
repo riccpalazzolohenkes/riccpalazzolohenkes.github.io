@@ -202,10 +202,11 @@ ul.list {
 
 <p>The analysis part is divided into 2 categories: consumption and production. For the consumption part, we have land use, the total buildings’ surface (m²), buildings’ energy certificates, and energy use patterns. For the production part, we analyzed the solar radiation which gives us an amount of potential production of energy. For both, a time pattern was added, daily as well as seasonal. The next step was evaluating the data and visualizing consumption and generation patterns. On this basis, we created the catalog of consumption & production per building. To do that, from the value of production we subtracted the consumption value and classified them. It helped us to identify the biggest producer and consumer in the area of Poblenou.</p>
 
+
 <div class=item>
-  <img class="responsive"><img src="images/image03.png" width="700" />
+  <img class="container" src="images/image03.png" alt="">
   <p class="b"> Fig. 3 - Methodology</p>
-</div>
+  </div>
 
 <p>All those steps lead to identifying which strategies would be the best for which building. For Mitigation: how we can redistribute the land use? How the renovation process will decrease the use of energy, and for production, we will look at areas where there is potential for production to place solar panels or later energy storage facilities. To some buildings, we could apply straight production strategies, while to the others we need to start from the renovation process.</p>
 
@@ -214,9 +215,9 @@ ul.list {
 <p>We built 2 datasets ( one for winter and one for summer). the land use for each building on our site. To be more precise with calculations we determined more categories, so for example not only say it’s retail but to check what kind of retail is it, if it is a hotel or a shopping mall, because the energy patterns for this function are completely different. We also considered if the building is mixed-use (ex. residential and office). After gathering this information we run it through the time pattern, daily and seasonal (because of the difference between summer and winter). We also consider the energy certificates, which determine how energy efficient each building is. And finally, based on the roof’s surface of each building and its sun radiation, we estimate the production capacity, getting both energy production and energy consumption per building and at aggregated value.</p>
 
 <div class=item>
-  <img class="responsive"><img src="images/image04.png" width="700" />
+  <img class="container" src="images/image04.png" alt="">
   <p class="b"> Fig. 4 - Data structure</p>
-</div>
+  </div>
 
 <h3>Analysis</h3>
 
@@ -224,23 +225,23 @@ ul.list {
 <p>We have got the values for the average consumption per type of land use and multiplied it by the building footprints, obtaining the consumption patterns per day. Every land use has its own pattern as you can see in the diagram on the left-bottom corner.</p>
 
   <div class=item>
-    <img class="responsive"><img src="images/image05.gif" width="700" />
+    <img class="container" src="images/image05.gif" alt="">
     <p class="b"> Fig. 5 - Energy consumption 24h</p>
-  </div>
+    </div>
 
   <p class="thick">Production</p>
 <p>For the production curve, we did a similar process. In this case, we consider the rooftop area as the main indicator for the calculation of the potential energy that can be produced. We are just considering photovoltaic since it is the main solution promoted and installed currently in the city, aligned with the MES Barcelona tool.</p>
 
-  <div class=item>
-    <img class="responsive"><img src="images/image06.gif" width="700" />
-    <p class="b"> Fig. 6 - Energy production 24h</p>
+<div class=item>
+  <img class="container" src="images/image06.gif" alt="">
+  <p class="b"> Fig. 6 - Energy production 24h</p>
   </div>
 
   <p class="thick">Balance</p>
 <p>We managed to get the final energy balance by combining the consumption and production data, obtaining 4 different categories: high producers, mid producers, mid consumers, and high consumers.</p>
-  <div class=item>
-    <img class="responsive"><img src="images/image07.gif" width="700" />
-    <p class="b"> Fig. 7 - Energy balance</p>
+<div class=item>
+  <img class="container" src="images/image07.gif" alt="">
+  <p class="b"> Fig. 7 - Energy balance</p>
   </div>
 
 <p>As you can see in the scatterplot, we distribute the buildings based on their consumption and production values.</p>
@@ -248,15 +249,18 @@ ul.list {
 <h3>Strategies</h3>
 
 <p>So, once we have got all the data inside our tool it is time to make something out of it and promote a new energy model. Our previous data comparing consumption patterns and solar energy potential of each building, help us defining a potential self-sufficiency index and a pashed intervention plan for the whole district urban fabric.</p>
+
 <div class=item>
-  <img class="responsive"><img src="images/image08.png" width="700" />
+  <img class="container" src="images/image08.png" alt="">
   <p class="b"> Fig. 8 - Strategies</p>
-</div>
+  </div>
+
 <p>This is our starting point, we identify the current buildings that could be self-sufficient in case the solar panels will install on their roofs in blue and the ones that despite this would still have a negative energy balance in the red.</p>
+
 <div class=item>
-  <img class="responsive"><img src="images/image09.gif" width="700" />
+  <img class="container" src="images/image09.gif" alt="">
   <p class="b"> Fig. 9 - Baseline</p>
-</div>
+  </div>
 
 <p class="thick">1. Renovation Strategy</p>
 <p>The first strategy is focused on the red buildings shown before, and reducing their current energy consumption. The selection of the buildings to intervene first on will be done following 2 criteria:
@@ -264,28 +268,32 @@ ul.list {
   -Their potential way towards becoming self-sufficient and share energy in the future.</p>
   
 <p>Our first criteria identify the potential of each building to reduce its current energy consumption, from an 80% reduction in the case of Gs certificates and 20 % in the case of Ds. Our second criteria, takes into account the temporal dimension, identifying 3 phases of intervention, based on the current energy balance of the buildings. We start from the ones that are farthest away from achieving self-sufficiency and end up with those closest to it.</p>
+
 <div class=item>
-  <img class="responsive"><img src="images/image10.gif" width="700" />
+  <img class="container" src="images/image10.gif" alt="">
   <p class="b"> Fig. 10 - Renovation strategy</p>
-</div>
+  </div>
 
 <p class="thick">2. Solar Energy Production</p>
 <p>Therefore we need to combine it with solar energy production on the roof’s strategy as well. This would help to reduce, even more, the energy consumed during the sunny hours and even generate an excess that could be stored and exchanged later.  Our strategy focuses now on the buildings with a positive overall energy balance or the blue dots on the right side of our scatterplot. This is the current situation with more than 1300 buildings with an opportunity to generate an energy excess.</p>
 
 <p>The way to choose the ones whose installation of solar panels could be financed by Barcelona Mes is by distributing the potential producers into three groups according to their capacity to collect energy to share, later on, dividing them from high to low producers. We can see here, how following the previous three phases explained in the previous renovation strategy, new potential higher producers that could be serviced by Barcelona Mes appear in the district.</p>
+
 <div class=item>
-  <img class="responsive"><img src="images/image11.gif" width="700" />
+  <img class="container" src="images/image11.jpg" alt="">
   <p class="b"> Fig. 11 - Solar energy production strategy</p>
-</div>
+  </div>
 
 <p class="thick">3. Energy Exchange Strategy</p>
 <p>Our final step once we have completed both the renovation and production process is to allow the exchange of energy between the buildings around 22@district that still present a negative energy balance. Firstly, we analyze the closest producers with an energy excess to these buildings, based on the existing electrical distribution network.</p>
 
 <p>Once we cluster the possible neighbors to take energy from, the exchange takes place according to the excess and demand of energy of each of the different members of the new distributed and public network.</p>
+
 <div class=item>
-  <img class="responsive"><img src="images/image12.gif" width="700" />
+  <img class="container" src="images/image12.gif" alt="">
   <p class="b"> Fig. 12 - Energy exchange</p>
-</div>
+  </div>
+
 <h3>Conclusion</h3>
 
 <p>The final result is that after our renovation process, we can have more than 400 hundred new buildings that could have a big energy excess to be shared and included in the Barcelona MES tool.</p>
@@ -298,7 +306,7 @@ ul.list {
 
 <br>
 
-<p><span style="font-weight:bold;">Flatten the Curve</span> is a project of <span style="font-weight:bold;">IAAC, Institute for Advanced Architecture of Catalonia</span> developed at <span style="font-weight:bold;">Master in City & Technology</span> in 2020/21 by students: <span style="font-weight:bold;">Riccardo Palazzolo, Marta Maria Galdys, Nadh Ha Naseer, Juan Pablo Pintado, Alvaro Cerezo</span>, and faculty: <span style="font-weight:bold;">Angelos Chronis, Iacopo Neri, Mahsa Nikoufar and Androniki Pappa</span></p>
+<p><span style="font-weight:bold;">Flatten the Curve</span> is a project of <span style="font-weight:bold;">IAAC, Institute for Advanced Architecture of Catalonia</span> developed at the <span style="font-weight:bold;">Master in City & Technology</span> in 2020/21 by students: <span style="font-weight:bold;">Riccardo Palazzolo, Marta Maria Galdys, Nadh Ha Naseer, Juan Pablo Pintado, Alvaro Cerezo</span>, and faculty: <span style="font-weight:bold;">Angelos Chronis, Iacopo Neri, Mahsa Nikoufar and Androniki Pappa</span></p>
 
 </div>
 	</article>
