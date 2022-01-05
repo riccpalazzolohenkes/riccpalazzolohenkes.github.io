@@ -174,7 +174,7 @@ ul.list {
 <p>Social Interaction in the context can be defined as “collections of agents interacting in space-time within geographic boundaries”.  We try to measure social interaction by computer vision, which employs machine learning to interpret, understand, and derive visual patterns. A more quantitative form of measurement, in contrast to traditional qualitative methods.</p>
 
 <p>In this research, we want to measure the average members, average distance, and average interaction time of people. Our hypothesis is that human interaction before the covid curfew would affect the number of people interacting. Also, measure interaction depending on exogenous variables such as weather or political demonstrations. We chose St Jaume square due to its open space, high dynamism, and its important role in Barcelona city life.</p>
-
+<br>
 <div class=item>
   <img class="container" src="images/image01.jpg" alt="">
   <p class="b"> Fig. 1 - Area of study</p>
@@ -202,21 +202,21 @@ ul.list {
 <p>After detecting people we assigned them a 1 m radius from the center.  When the circles overlapped it detected it as an interaction. If the interaction lasted more than 2 frames, we consider it as a group. Within the groups, we were checking, as mentioned before, the number of people, time of interaction, and the average distance between the people inside the groups. After collecting those data from our 6 videos we took the average from each video to compare the data and conclude it.</p>
 
 <p>The data collection process consisted of saving every 50th frame from the video. Most of our videos were 20 minutes long so we have 600 frames per video.</p>
-
+<br>
 <div class=item>
   <img class="container" src="images/image03.jpg" alt="">
   <p class="b"> Fig. 3 - Data collection</p>
   </div>
 
 <p>Having filtered the people, we start to measure the distances between the people to create clusters of groups. From there we use the time factor to identify the groups of people that are actually staying together and not just passing by at a close distance, once these groups are detected we create a heatmap to understand the areas in which people move in groups.  After having categorized the people that move in groups, or are passing by and people that move individually we track their movement along with the frames over time, and in this particular case we are also clustering the groups by their size.</p>
-
+<br>
 <div class=item>
   <img class="container" src="images/image04.jpg" alt="">
   <p class="b"> Fig. 4 - Process step by step</p>
   </div>
 
   <p>This process was repeated across all 6 videos, analyzing the total number of people, no, of groups, the total number of people in these groups, and number of crossings. Also from the 6 videos, the first 3 are from before the curfew ended and the last 3 after in order to make a comparative analysis at the end.</p>
-
+<br>
   <div class=item>
     <img class="container" src="images/image05.gif" alt="">
     <p class="b"> Fig. 5 - Interaction analysis</p>
@@ -229,7 +229,7 @@ ul.list {
     <p>After extracting the main data from each of the videos recorded, we see that even though the average occupancy of the square was higher before the 8th of May, the number of interactions between pedestrians increased after the curfew ends. Even if the number of groups of people gathering together has not increased that much, their total number of members grows, staying closer and longer (almost 3 seconds more on average).</p>
 
     <p>We think this research could be applied to other squares, providing information about how people gather, what are the places to stay, what are the places to move, and overall it could provide a specific aggregation pattern to each of them. Crossing these patterns with some other morphological and spatial data, it could be possible to categorize squares according to their aggregation pattern and support the way in which public spaces can be designed and activated.</p>
-
+<br>
     <p><span style="font-weight:bold;">Interaction Evaluation Tool</span> is a project of <span style="font-weight:bold;">IAAC, Institute for Advanced Architecture of Catalonia</span> developed at the <span style="font-weight:bold;">Master in City & Technology</span> in 2020/21 by students: <span style="font-weight:bold;">Riccardo Palazzolo, Alvaro Cerezo, Marta Galdys,Nadh Ha Naseer, Juan Pablo Pintado</span>, and faculty: <span style="font-weight:bold;">Aldo Sollazzo, Iacopo Neri & Soroush Garivani.</span></p>
 
 </div>
